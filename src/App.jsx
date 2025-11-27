@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import profileImage from './assets/profile.jpg'
 import turinLogo from './assets/turin_logo.png'
 import school21Logo from './assets/school21_logo.png'
+import humansLogo from './assets/humans_logo.png'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -112,8 +113,13 @@ function App() {
               </ul>
             </div>
             <div className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Sales Manager — HUMANS</h3>
-              <p className="text-primary-600 font-semibold mb-6">2023 — 2024</p>
+              <div className="flex items-center gap-4 mb-4">
+                <img src={humansLogo} alt="Humans" className="w-16 h-16 object-contain rounded-lg" />
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Sales Manager — HUMANS</h3>
+                  <p className="text-primary-600 font-semibold">2023 — 2024</p>
+                </div>
+              </div>
               <ul className="space-y-3 text-lg">
                 <li>• Mijozlar bilan kommunikatsiya va sotuvni boshqarish</li>
                 <li>• SAP va Creatio orqali mijozlar ma’lumotlari bilan ishlash</li>
