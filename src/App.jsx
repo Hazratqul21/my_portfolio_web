@@ -59,8 +59,8 @@ function App() {
           </p>
           <div className="space-y-4 mb-12">
             <p className="text-xl">Toshkent, Uzbekistan</p>
-            <p>Email: <span className="font-mono text-primary-600">[kiriting]</span> | Phone: <span className="font-mono text-primary-600">[kiriting]</span></p>
-            <p>LinkedIn / GitHub: <span className="font-mono text-primary-600">[havola qo‘shiladi]</span></p>
+            <p>Email: <span className="font-mono text-primary-600">xazratabduraufov@gmail.com</span> | Phone: <span className="font-mono text-primary-600">+998909572055</span></p>
+            <p>LinkedIn / GitHub: <span className="font-mono text-primary-600"><a href="https://github.com/Hazratqul21" target="_blank" rel="noopener noreferrer" className="hover:underline">https://github.com/Hazratqul21</a></span></p>
           </div>
           <button
             onClick={() => scrollToSection('profile')}
@@ -197,7 +197,7 @@ function App() {
       {/* Footer */}
       <footer className="py-12 px-6 bg-gradient-to-r from-primary-600 to-blue-700 text-white text-center">
         <p>&copy; 2025 ABDURAUFOV HAZRATQUL. All rights reserved.</p>
-        <p className="mt-2 text-sm opacity-90">Email: [kiriting] | LinkedIn / GitHub: [havola qo‘shiladi]</p>
+        <p className="mt-2 text-sm opacity-90">Email: xazratabduraufov@gmail.com | LinkedIn / GitHub: https://github.com/Hazratqul21</p>
       </footer>
 
       <style jsx>{`
