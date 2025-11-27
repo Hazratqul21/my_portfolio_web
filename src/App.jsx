@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import profileImage from './assets/profile.jpg'
 import turinLogo from './assets/turin_logo.png'
+import school21Logo from './assets/school21_logo.png'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -164,10 +165,17 @@ function App() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">EDUCATION</h2>
           <div className="h-1 w-24 bg-primary-600 mx-auto mb-12"></div>
-          <div className="bg-white/70 backdrop-blur-sm p-12 rounded-2xl shadow-xl max-w-2xl mx-auto border border-gray-100 flex flex-col items-center">
-            <img src={turinLogo} alt="Turin Polytechnic University" className="w-32 h-32 object-contain mb-6" />
-            <h3 className="text-2xl font-bold mb-4">Turin Polytechnic University in Tashkent</h3>
-            <p className="text-xl text-primary-600 font-semibold mb-2">Bachelor — Computer Science (ongoing)</p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white/70 backdrop-blur-sm p-12 rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center hover:shadow-2xl transition-all">
+              <img src={turinLogo} alt="Turin Polytechnic University" className="w-32 h-32 object-contain mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Turin Polytechnic University in Tashkent</h3>
+              <p className="text-xl text-primary-600 font-semibold mb-2">Bachelor — Computer Science (ongoing)</p>
+            </div>
+            <div className="bg-white/70 backdrop-blur-sm p-12 rounded-2xl shadow-xl border border-gray-100 flex flex-col items-center hover:shadow-2xl transition-all">
+              <img src={school21Logo} alt="School21" className="w-32 h-32 object-contain mb-6" />
+              <h3 className="text-2xl font-bold mb-4">School21 Raqamli Texnologiyalar Maktabi</h3>
+              <p className="text-xl text-primary-600 font-semibold mb-2">O'quvchisi va Amaliyotchisi</p>
+            </div>
           </div>
         </div>
       </section>
