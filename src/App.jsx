@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import profileImage from './assets/profile.jpg'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -51,6 +52,14 @@ function App() {
       {/* Hero */}
       <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 relative inline-block">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-blue-600 rounded-full blur-lg opacity-50 animate-pulse"></div>
+            <img
+              src={profileImage}
+              alt="Abduraufov Hazratqul"
+              className="relative w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto object-cover shadow-2xl border-4 border-white/80 transform hover:scale-105 transition-transform duration-300"
+            />
+          </div>
           <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-primary-600 to-blue-700 bg-clip-text text-transparent mb-6 animate-fade-in">
             ABDURAUFOV HAZRATQUL
           </h1>
