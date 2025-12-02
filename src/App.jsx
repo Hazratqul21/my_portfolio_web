@@ -136,7 +136,7 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">SKILLS</h2>
           <div className="h-1 w-24 bg-primary-600 mx-auto"></div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-6 text-primary-600">Python & Data Tools</h3>
             <ul className="space-y-2 text-lg">
@@ -153,6 +153,15 @@ function App() {
             <ul className="space-y-2 text-lg">
               <li>• Excel (advanced), Google Sheets</li>
               <li>• SAP, Creatio CRM</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-primary-600">Systems & Infrastructure</h3>
+            <ul className="space-y-2 text-lg">
+              <li>• Linux</li>
+              <li>• VMware</li>
+              <li>• Hyper-V</li>
+              <li>• Microsoft Tools</li>
             </ul>
           </div>
           <div>
